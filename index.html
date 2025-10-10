@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Life Melody Official</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary">Life Melody</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-primary py-2 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-white">Life Melody</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 shadow-sm border-0 m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-primary text-uppercase mb-2 animated slideInDown">Welcome To </p>
+                    <h1 class="display-4 mb-3 animated slideInDown">Life Melody Official</h1>
+                    <p class="animated slideInDown">LIFE MELODY is more than just a Creative Studio-we are a Social Enterprise, Committed to Empowering Cambodian Voices, Preserving Cultural Identity, and Generating Sustainable Livelihoods Through Music, Media, and Education.</p>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <a href="img/Life Melody Profile_Finalized.pdf" target="_blank" class="btn btn-primary py-3 px-4 me-5">View Profile</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/nNj_ZFXAIDs?si=2WKJa5tFxfIo92RH" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Life Melody Official</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white p-3 w-100 mb-3" src="img/hero-1.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-50" src="img/hero-3.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white p-3 w-50 mb-3" src="img/hero-4.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-100" src="img/hero-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Project Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-3 img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid bg-light p-3" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid bg-light p-3" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">About Us</p>
+                        <h1 class="display-6 mb-4">What is The Life Melody ?</h1>
+                        <p>Tempor Founded on June 1, 2024, Life Melody is a dynamic music and media production company
+dedicated to creating original songs, short films, and educational media content that reflect
+Khmer cultural identity and address critical social issues in Cambodia.</p>
+                        <p>We offer a varied range of services, including:</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>1 Music Studio Classes
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>2 Original and Cover Song Production
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>3 Videography, Short Films, and
+Documentaries
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>4 Marketing Media Production
+(posters, promotional videos, etc.)
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>5 NGO-focused Consultancy in
+Education, Health, Child Protection,
+and Inclusive Education
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5" href="img/Life Melody Profile_Finalized.pdf" target="_blank">View CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Why Choose Us!</p>
+                <h1 class="display-6 mb-5">The Leading Life Melody In The Country</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">35</h1>
+                        <h4 class="mb-3">Award Winning</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">45</h1>
+                        <h4 class="mb-3">Years Experience</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h1 class="display-2 text-primary mb-3" data-toggle="counter-up">12345</h1>
+                        <h4 class="mb-3">Happy Clients</h4>
+                        <span>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl bg-light py-5 my-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Services</p>
+                <h1 class="display-6 mb-4">We Provide Best Professional Services</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="https://web.facebook.com/lifemelodyclass.studio" target="_blank"><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Life Melody Studio</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="https://web.facebook.com/lifemelodyclass.studio" target="_blank"><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Life Melody Class</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="https://web.facebook.com/profile.php?id=100090887088436" target="_blank"><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Life Melody Media</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href="https://web.facebook.com/4MClass" target="_blank"><i class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Life Melody Consultancy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Works</p>
+                <h1 class="display-6 mb-0">Portfolio Project</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-5.jpg" alt="">
+                                <a class="project-title h5 mb-0" >
+                                    <button type="button" class="btn-play" data-bs-toggle="modal"
+                                        data-src="https://web.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2Fnepcambodia.org%2Fvideos%2F569436892863318%2F&show&_rdc=1&_rdr#" data-bs-target="#videoModal">
+                                        <span></span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-1.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-1.jpg" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-2.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-2.jpg" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-6.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-6.jpg" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-7.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="https://www.youtube.com/embed/TqAW0er5q7g?si=_nfgFI7ojNRxLRYH" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-3.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-3.jpg" data-lightbox="project">    
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-4.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-4.jpg" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-8.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-8.jpg" data-lightbox="project">
+                                    7th National Conference
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl px-0 py-5">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">Our Team</p>
+            <h1 class="display-6 mb-0">Management Team </h1>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row g-0 flex-sm-row">
+                    <div class="col-sm-6">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="h-100 p-5 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>YOEM CHAMNAB</h4>
+                                <span>Head of Life Melody Group</span>
+                            </div>
+                            <p>Strategic leadership, financial oversight, stakeholder relations </p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://web.facebook.com/chamnab.yoem" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://t.me/Vitakka" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.youtube.com/@LifeMelodyOfficial" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="row g-0 flex-sm-row-reverse flex-lg-row">
+                    <div class="col-sm-6">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="h-100 p-5 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>TANG BUNHAI</h4>
+                                <span>Class & Studio Lead</span>
+                            </div>
+                            <p>Music curriculum, training, production quality</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://web.facebook.com/ra.hai.79" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://t.me/+85587737260" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.youtube.com/@tangbunhai7284" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row g-0 flex-lg-row-reverse">
+                    <div class="col-sm-6">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="h-100 p-5 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>TUN SAK</h4>
+                                <span>Media & Marketing Lead</span>
+                            </div>
+                            <p>Content creation, social media strategy, promotion</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://web.facebook.com/soresakofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://t.me/soresak" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.youtube.com/@Mr.SakReaction" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="row g-0 flex-sm-row-reverse">
+                    <div class="col-sm-6">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="h-100 p-5 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>BAN BUTNAVONG</h4>
+                                <span>Songwriting & Production Lead</span>
+                            </div>
+                            <p>Original song production, team coordination, 
+quality assurance</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://web.facebook.com/veasna.blackhole" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://t.me/+85587737260" target="_blank"><i class="fab fa-telegram"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.youtube.com/@banbutnavong1999" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Client's Review</p>
+                <h1 class="display-6 mb-0">More Than 100+ Customers Trusted Us</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-white p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Borin</h5>
+                            <span>NGO</span>
+                        </div>
+                    </div>
+                    <p class="mb-0"><i>Good job Service Very Good Team</i></p>
+                </div>
+                <div class="testimonial-item bg-white p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">NEP Cambodia</h5>
+                            <span>NGO</span>
+                        </div>
+                    </div>
+                    <p class="mb-0"><i>Good job Service Very Good Team</i></p>
+                </div>
+                <div class="testimonial-item bg-white p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Sok LyLy</h5>
+                            <span>Online Shop</span>
+                        </div>
+                    </div>
+                    <p class="mb-0"><i>Good job Service Very Good Team</i></p>
+                </div>
+                <div class="testimonial-item bg-white p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                    <p class="mb-0"><i>Good job Service Very Good Team</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-dark text-white-50 mt-5 py-5 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row g-5 py-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="display-5 text-primary">Life Melody Official</h1>
+                </a>
+                <p>If you would like to contact us to use our services, please contact us now via the information below :</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>AL15 34B Street, Borey LengNavatra, Tuol Pongro</p>
+                <p><i class="fa fa-phone-alt me-2"></i>087 737 260 / 071 223 9390</p>
+                <p><i class="fa fa-envelope me-2"></i>lifemelodyofficial@gmail.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.facebook.com/lifemelodyclass.studio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.youtube.com/@LifeMelodyOfficial/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://t.me/lifemelodyofficialkh" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.tiktok.com/@lifemelodyofficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Services Class & Studio</h4>
+                        <a class="btn btn-link" href="">Cover Song</a>
+                        <a class="btn btn-link" href="">Original Song</a>
+                        <a class="btn btn-link" href="">Course Make Music Level 1</a>
+                        <a class="btn btn-link" href="">Course Make Music Level 2</a>
+                        <a class="btn btn-link" href="">Course Make Music Level 3</a>
+                        <a class="btn btn-link" href="">Course Mixing Instrument</a>
+                        <a class="btn btn-link" href="">Course Mixing&Mastering Music</a>
+                        <a class="btn btn-link" href="">Support</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Services Media</h4>
+                        <a class="btn btn-link" href="">Design Poster</a>
+                        <a class="btn btn-link" href="">Motion Graphics</a>
+                        <a class="btn btn-link" href="">Event Photography</a>
+                        <a class="btn btn-link" href="">Product Photography</a>
+                        <a class="btn btn-link" href="">Model Photography</a>
+                        <a class="btn btn-link" href="">Video Shooting</a>
+                        <a class="btn btn-link" href="">Video Editing</a>
+                        <a class="btn btn-link" href="">Support</a>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="text-light mb-4">Contact Us</h4>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 bg-secondary" style="padding: 20px 30px;" placeholder="YourName"><button class="btn btn-primary px-4">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white border-top border-secondary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">Life Melody Official</a>. All Rights Reserved.</p>
+            </div>
+            <div class="py-4 px-5 bg-secondary footer-shape position-relative text-center text-md-end">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <p class="mb-0">Designed by <a class="text-primary fw-bold" href="https://web.facebook.com/soresakofficial/" target="_blank">MrSak Official</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
