@@ -467,7 +467,7 @@ button {
 }
 
 button {
-    background: #2563eb;
+    background: #EAA636;
     color: white;
     border: none;
     cursor: pointer;
@@ -475,7 +475,7 @@ button {
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #a37325;
 }
 
 #result {
